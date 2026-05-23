@@ -298,10 +298,10 @@ export default function MoneyJar() {
   const QUICK_EMOJIS = ["🎯", "🚗", "✈️", "🏠", "💍", "📱", "🎓", "🏋️", "🎮", "🛍️", "💊", "🌴"];
 
   return (
-    <div style={{ minHeight: "100vh", width: "100%", background: theme.bg, fontFamily: "'Plus Jakarta Sans', sans-serif", transition: "background 0.5s ease", position: "relative", overflowX: "hidden" }}>
+    <div style={{ minHeight: "100vh", width: "100vw", background: theme.bg, fontFamily: "'Plus Jakarta Sans', sans-serif", transition: "background 0.5s ease", position: "relative", overflowX: "hidden" }}>
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Sora:wght@700;800&display=swap');
-        * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+        *, html, body { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; } html, body, #root { width: 100%; min-height: 100vh; }
         ::-webkit-scrollbar { display: none; }
 
         @keyframes burst1 { 0%{transform:translate(0,0) scale(1);opacity:1} 100%{transform:translate(-35px,-80px) scale(0);opacity:0} }
